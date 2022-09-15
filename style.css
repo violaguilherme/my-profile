@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: #454f80;
+    /* background-position: top center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-color: lightgoldenrodyellow; */
+}
+
+body * {
+    font-family: 'Inter', sans-serif;
+    line-height: 160%;
+}
+
+header p {
+    padding: 10px;
+    text-align: center;
+}
+
+header {
+    padding-top: 25px;
+    height: calc(120px + 32px);
+}
+
+header div {
+    display: flex;
+    margin: auto;
+    width: 130px;
+    background-image: linear-gradient(90deg, #d0b7a4, #b4e4fe );
+    border-radius: 50%;
+    padding: 3.7px;
+    transition: transform .3s;
+}
+
+header div:hover {
+    transform: scale(1.1);
+}
+
+header div img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 580px;
+    width: 90%;
+    margin: 30px auto;
+}
+
+ul {
+    list-style: none;
+}
+
+section {
+    background-image: linear-gradient(90deg, #d0b7a4, #b4e4fe );
+    padding-top: 4px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+section div {
+    background-color: #FBEAEB;
+    padding: 32px;
+    padding-top: 24px;
+    border-radius: 8px;
+}
+
+section h2 {
+    letter-spacing: -0.47px;
+}
+
+section p {
+    letter-spacing: -0.18px;
+    color: rgba(0, 0, 0, 0.705);
+}
+
+section ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    gap: 30px;
+}
+
+section ul li {
+    transition: transform .3s;
+    padding-left: 15px;
+    padding-top: 10px;
+}
+
+section ul li:hover {
+    transform: scale(1.1);
+}
+
+.tech-list img {
+    width: 60px;
+    border-radius: 8px;
+}
+
+.channel-list img {
+    border-radius: 50%;
+    width: 60px;
+    border: 1px solid #70619b;
+}
+
+/* animation */
+
+header div {
+    animation: fromTop .3s 0.2s backwards;
+}
+
+main section {
+    animation: fromBottom .7s backwards;
+}
+
+main section:nth-child(1) {
+    animation-delay: 0;
+}
+
+main section:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+main section:nth-child(3) {
+    animation-delay: 0.8s;
+}
+
+@keyframes fromTop {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+        
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fromBottom {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+        
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
